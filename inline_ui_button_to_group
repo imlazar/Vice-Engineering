@@ -1,0 +1,9 @@
+from telebot.types import WebAppInfo, ReplyKeyboardMarkup
+
+keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
+web_button = WebAppInfo(url="https://yourwebsite.com")
+keyboard.add(InlineKeyboardButton(text="🌍 Open Website", web_app=web_button))
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.send_message(message.chat.id, "Click below to open the website:", reply_markup=keyboard)
