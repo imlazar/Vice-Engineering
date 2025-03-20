@@ -16,3 +16,7 @@ Monitoring server for:
 - Social Media
 - @Deco
 - Mai era ceva
+- Avocatwo
+- LuxElectro
+- LuxMed(ium)
+- Request STEM (scoala de tech)
